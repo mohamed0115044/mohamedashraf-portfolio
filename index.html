@@ -1,66 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mohamed Ashraf | Logo Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Mohamed Ashraf</h1>
-      <p>Professional Logo Designer</p>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamed Ashraf | Logo Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: #121212;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-    <section class="about">
-      <img
-        src="Mohamed_Ashraf_About_Photo.jpg"
-        alt="Mohamed Ashraf"
-        class="profile-img"
-      />
-      <div class="about-text">
-        <h2>About Me</h2>
-        <p>
-          I’m Mohamed Ashraf, a passionate and creative logo designer who turns
-          ideas into unique visual identities.
-        </p>
-        <a class="btn" href="MohamedAshraf_Portfolio.pdf" download
-          >Download PDF</a
-        >
-      </div>
-    </section>
-<section class="about">
-  <img
-    src="Mohamed_Ashraf_About_Photo.jpg"
-    alt="Mohamed Ashraf"
-    class="profile-img"
-  />
-  <div class="about-text">
-    <h2>About Me</h2>
-    <p>
-      I’m Mohamed Ashraf, a passionate and creative logo designer who turns
-      ideas into unique visual identities.
-    </p>
-    <a class="btn" href="MohamedAshraf_Portfolio.pdf" download>Download PDF</a>
-  </div>
-</section>
-    <section class="logos">
-      <h2>Logo Projects</h2>
-      <ul>
-        <li><img src="logo1.jpg" alt="Logo 1" /></li>
-        <li><img src="logo2.jpg" alt="Logo 2" /></li>
-        <li><img src="logo3.jpg" alt="Logo 3" /></li>
-        <li><img src="logo4.jpg" alt="Logo 4" /></li>
-      </ul>
-    </section>
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #1e1e1e;
+    }
 
-    <footer>
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.2em;
+    }
+
+    p {
+      font-size: 1.1em;
+      color: #ccc;
+    }
+
+    .about {
+      display: flex;
+      align-items: center;
+      padding: 40px 20px;
+      gap: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .profile-img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+      border: 2px solid #333;
+    }
+
+    .about-text h2 {
+      margin: 0 0 10px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #1f6feb;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #155bc0;
+    }
+
+    .logos {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .logos ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .logos img {
+      width: 200px;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: #1e1e1e;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+
+    footer a {
+      color: #1f6feb;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mohamed Ashraf</h1>
+    <p>Professional Logo Designer</p>
+  </header>
+
+  <section class="about">
+    <img src="Mohamed_Ashraf_About_Photo.jpg" alt="Mohamed Ashraf" class="profile-img" />
+    <div class="about-text">
+      <h2>About Me</h2>
       <p>
-        Contact: mohamedasraf0115044@gmail.com |
-        <a href="https://wa.me/201018586467" target="_blank"
-          >WhatsApp: +201018586467</a
-        >
+        I’m Mohamed Ashraf, a passionate and creative logo designer who turns ideas into unique visual identities.
       </p>
-    </footer>
-  </body>
+      <a class="btn" href="MohamedAshraf_Portfolio.pdf" download>Download Portfolio PDF</a>
+    </div>
+  </section>
+
+  <section class="logos">
+    <h2>Logo Projects</h2>
+    <ul>
+      <li><img src="logo1.jpg" alt="Logo 1" /></li>
+      <li><img src="logo2.jpg" alt="Logo 2" /></li>
+      <li><img src="logo3.jpg" alt="Logo 3" /></li>
+      <li><img src="logo4.jpg" alt="Logo 4" /></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>
+      Contact: mohamedasraf0115044@gmail.com |
+      <a href="https://wa.me/201018586467" target="_blank">WhatsApp: +201018586467</a>
+    </p>
+  </footer>
+
+</body>
 </html>
