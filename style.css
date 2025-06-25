@@ -1,0 +1,39 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #1a1a1a;
+    color: #fff;
+}
+header {
+    background: #222;
+    padding: 20px;
+    text-align: center;
+}
+.about {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+.about-photo {
+    width: 200px;
+    border-radius: 12px;
+    margin-right: 20px;
+}
+.logos ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    list-style: none;
+}
+.logos img {
+    width: 200px;
+    margin: 10px;
+}
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #111;
+}
