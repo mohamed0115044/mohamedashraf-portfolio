@@ -1,39 +1,35 @@
+.about-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #1a1a1a;
-    color: #fff;
-}
-header {
-    background: #222;
-    padding: 20px;
-    text-align: center;
-}
 .about {
-    display: flex;
-    padding: 20px;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  padding: 20px;
 }
-.about-photo {
-    width: 200px;
-    border-radius: 12px;
-    margin-right: 20px;
+
+.about-text {
+  max-width: 500px;
 }
-.logos ul {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 20px;
-    list-style: none;
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
 }
-.logos img {
-    width: 200px;
-    margin: 10px;
+
+ul li {
+  margin: 10px;
 }
-footer {
-    text-align: center;
-    padding: 15px;
-    background: #111;
+
+ul img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  border-radius: 10px;
 }
