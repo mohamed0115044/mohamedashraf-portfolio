@@ -1,78 +1,88 @@
+/* Reset بسيط */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
   background-color: #111;
-  color: #fff;
-  line-height: 1.6;
+  color: #eee;
 }
 
+/* الهيدر */
 header {
   text-align: center;
-  padding: 40px 20px 20px;
-  background-color: #222;
+  padding: 40px 20px 10px;
+  background-color: #1c1c1c;
 }
 
 header h1 {
   font-size: 36px;
-  margin-bottom: 10px;
+  margin: 0;
 }
 
 header p {
   font-size: 18px;
-  color: #ccc;
+  color: #bbb;
+  margin: 8px 0 0;
 }
 
+/* قسم About */
 .about {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   padding: 40px 20px;
-  gap: 30px;
 }
 
 .about-image img {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  object-fit: contain; /* علشان يجيب الصورة كاملة */
+  border-radius: 12px; /* مربع بحواف ناعمة */
   border: 3px solid #333;
+  background-color: #222;
 }
 
 .about-text {
-  max-width: 500px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .about-text h2 {
-  font-size: 28px;
+  font-size: 26px;
   margin-bottom: 10px;
 }
 
 .about-text p {
-  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 400px;
 }
 
+/* زر التحميل */
 .btn {
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #2979ff;
   color: white;
-  border-radius: 5px;
   text-decoration: none;
+  border-radius: 8px;
   font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #0056b3;
+  background-color: #1565c0;
 }
 
+/* قسم اللوجوهات */
 .logos {
   padding: 40px 20px;
   text-align: center;
 }
 
 .logos h2 {
-  font-size: 28px;
+  font-size: 24px;
   margin-bottom: 20px;
 }
 
@@ -80,8 +90,8 @@ header p {
   list-style: none;
   padding: 0;
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   justify-items: center;
 }
 
@@ -89,12 +99,23 @@ header p {
   width: 100%;
   max-width: 220px;
   border-radius: 10px;
+  border: 2px solid #444;
 }
 
+/* الفوتر */
 footer {
+  background-color: #1a1a1a;
   padding: 20px;
   text-align: center;
-  background-color: #222;
-  color: #ccc;
   font-size: 14px;
+  color: #aaa;
+}
+
+footer a {
+  color: #4fc3f7;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
